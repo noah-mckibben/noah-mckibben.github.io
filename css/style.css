@@ -46,6 +46,7 @@ a {
 
 a:hover {
   color: white;
+  transition: 0.3s;
 }
 
 div.container {
