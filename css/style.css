@@ -1,0 +1,75 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Montserrat:wght@300;400;700&family=Poppins:wght@400;700&family=Raleway:ital,wght@0,200;0,300;0,400;1,200&family=Roboto&family=Satisfy&family=Sofia+Sans&display=swap');
+
+html, body {
+  height: 100%;
+  background-image: linear-gradient(#9198e5, #ffffff);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  width: 95%;
+  height: 7%;
+  align-items: center;
+  font-family: Poppins;
+  background: rgba( 255, 255, 255, 0.4 );
+  -webkit-backdrop-filter: blur( 5px );
+  border-radius: 10px;
+  transition: 0.3s;
+  position:fixed
+}
+
+nav > img {
+  border-radius: 50%;
+  width: 40px;
+}
+
+nav > button {
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-family: Poppins;
+}
+
+nav > a, nav > button, ion-icon {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+div.container {
+  display: flex;
+  justify-content: center;
+}
+
+.darkToggle {
+  font-size: 24px;
+}
+
+.darkNav {
+  background: rgba( 0, 0, 0, 0.25 );
+  color: white;
+}
+
+.darkButton {
+  background-color: white;
+  color: black;
+}
+
+.darkHTML {
+  background-color: black;
+}
+
+.darkText {
+  color: white;
+}
