@@ -49,6 +49,12 @@ a:hover {
   transition: 0.3s;
 }
 
+a.active, a:hover, a:focus {
+  color: white;
+  text-decoration:underline;
+  transition: 0.3s;
+}
+
 div.container {
   display: flex;
   justify-content: center;

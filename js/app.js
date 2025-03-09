@@ -12,4 +12,9 @@ darkToggle.addEventListener('click', () => {
     a.classList.toggle('darkText')
     html.classList.toggle('darkHTML')
 
+    $(".a").click(function () {
+        $(".a").removeClass("active")
+        $(this).addClass("active")
+    })
+
 })
