@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Montserrat:wght@300;400;700&family=Poppins:wght@400;700&family=Raleway:ital,wght@0,200;0,300;0,400;1,200&family=Roboto&family=Satisfy&family=Sofia+Sans&display=swap');
 
 html, body {
-  height: 100%;
+height: 100%;
 }
 
 nav {
@@ -71,7 +71,7 @@ div.container {
 }
 
 .darkHTML {
-  background-color: black;
+  color: black;
 }
 
 .darkText {
@@ -80,15 +80,16 @@ div.container {
 
 div.div-content-home {
   margin: 3%;
-  color: white;
+  color: black;
 }
 
 div.div-content-about {
   margin: 3%;
-  color: white;
+  color: black;
 }
 
 div.div-content-projects {
   margin: 3%;
-  color: white;
+  color: black;
 }
+
