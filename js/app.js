@@ -12,9 +12,17 @@ darkToggle.addEventListener('click', () => {
     a.classList.toggle('darkText')
     html.classList.toggle('darkHTML')
 
-    $(".a").click(function () {
+})
+
+$("navbar").click(function () {
         $(".a").removeClass("active")
         $(this).addClass("active")
-    })
-
 })
+
+function hideAllContentDivs(){
+        var contentDivs = document.getElementsByClassName('content');
+        for (var i = 0; i < contentDivs.length; ++i) {
+            var div = contentDivs[i];
+            div.style.display='none';
+        }
+}
