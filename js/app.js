@@ -1,23 +1,18 @@
 const nav = document.querySelector('nav');
 const darkToggle = document.querySelector('.darkToggle');
 const button = nav.querySelector('button');
-const body = document.querySelector('body')
-const a = document.querySelector('a')
-const html = document.querySelector('html')
+const project = document.querySelector('a.project')
+const about = document.querySelector('a.about')
+const home = document.querySelector('a.home')
 
 darkToggle.addEventListener('click', () => {
-    nav.classList.toggle('darkNav');
+    nav.classList.toggle('darkNav')
     button.classList.toggle('darkButton');
-    body.classList.toggle('darkHTML')
-    a.classList.toggle('darkText')
-    html.classList.toggle('darkHTML')
-
+    project.classList.toggle('darkText');
+    about.classList.toggle('darkText');
+    home.classList.toggle('darkText');
 })
 
-$("navbar").click(function () {
-        $(".a").removeClass("active")
-        $(this).addClass("active")
-})
 
 function hideAllContentDivs(){
         var contentDivs = document.getElementsByClassName('content');
