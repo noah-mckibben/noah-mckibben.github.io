@@ -82,6 +82,13 @@ div.container {
 }
 
 div.div-content-home {
-  align-content: center;
-  margin-
+  margin-top: 10%;
+}
+
+div.div-content-about {
+  margin-top: 10%;
+}
+
+div.div-content-projects {
+  margin-top: 10%;
 }
