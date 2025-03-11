@@ -37,6 +37,9 @@ function background() {
     })
 }
 
+function disableScroll() {
+    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+}
 
 function hideAllContentDivs(){
         var contentDivs = document.getElementsByClassName('content');
