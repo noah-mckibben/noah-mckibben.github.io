@@ -80,7 +80,7 @@ div.container {
   color: white;
 }
 
-@media only screen and (max-width: 801px) {
+
 div.div-content-home h1 {
   opacity: 0;
   animation-name: fade-in;
@@ -89,41 +89,35 @@ div.div-content-home h1 {
   animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   animation-fill-mode: forwards;
   font-size: 65px;
-  display: flex;
-  justify-content: center;
-
-
-
+  margin-top: 20%;
 }
-  @media only screen and (max-width: 540px) {
-    div.div-content-home h1 {
-      font-size: 40px;
-      margin-top: 25%;
-      display: flex;
-      justify-content: center;
+
+
+    div.div-content-home h2 {
+      opacity: 0;
+      animation-name: fade-in;
+      animation-duration: 0.7s;
+      animation-delay: 1s;
+      animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      animation-fill-mode: forwards;
+      font-size: 30px;
 
     }
 
-
   @media only screen and (max-width: 540px) {
-div.div-content-home h2 {
-  font-size: 25px;
-  display: flex;
- justify-content: center;
-}
+    div.div-content-home h1 {
+      margin-top: 20%;
+      justify-content: center;
+      display: flex;
+      font-size: 40px;
+    }
 
-@media only screen and (max-width: 600px) {
-      div.div-content-home h1 {
-        font-size: 40px;
-        margin-top: 25%;
-
-}
-
-@media only screen and (max-width: 600px) {
-        div.div-content-home h2 {
-          font-size: 25px;
-          
-        }
+    @media only screen and (max-width: 540px) {
+      div.div-content-home h2 {
+        justify-content: center;
+        display: flex;
+        font-size: 25px;
+      }
 
 div.div-content-home span:last-child {
   animation-delay: 0.9s;
@@ -147,10 +141,10 @@ div.div-content-projects {
     opacity: 0;
 
   }
+
   to {
     opacity: 1;
     transform: rotate(0deg);
   }
-}
 
 

@@ -7,9 +7,10 @@ const home = document.querySelector('a.home')
 const spanhome = document.querySelector('span.home')
 const spanabout = document.querySelector('span.about')
 const spanproject = document.querySelector('span.project')
+const h1= document.querySelector('h1.heading')
 
 darkToggle.addEventListener('click', () => {
-    nav.classList.toggle('darkNav')
+    nav.classList.toggle('darkNav');
     button.classList.toggle('darkButton');
     project.classList.toggle('darkText');
     about.classList.toggle('darkText');
@@ -17,6 +18,7 @@ darkToggle.addEventListener('click', () => {
     spanhome.classList.toggle('darkText');
     spanabout.classList.toggle('darkText');
     spanproject.classList.toggle('darkText');
+    h1.classList.toggle('darkText');
 
 })
 
