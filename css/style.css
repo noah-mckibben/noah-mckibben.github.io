@@ -93,20 +93,37 @@ div.div-content-home h1 {
   justify-content: center;
 
 
-}
-@media only screen and (max-width: 375px) {
-  div.div-content-home h1 {
-    font-size: 40px;
-    margin-top: 25%;
-    display: flex;
-    justify-content: center;
-  }
 
+}
+  @media only screen and (max-width: 540px) {
+    div.div-content-home h1 {
+      font-size: 40px;
+      margin-top: 25%;
+      display: flex;
+      justify-content: center;
+
+    }
+
+
+  @media only screen and (max-width: 540px) {
 div.div-content-home h2 {
   font-size: 25px;
   display: flex;
  justify-content: center;
 }
+
+@media only screen and (max-width: 600px) {
+      div.div-content-home h1 {
+        font-size: 40px;
+        margin-top: 25%;
+
+}
+
+@media only screen and (max-width: 600px) {
+        div.div-content-home h2 {
+          font-size: 25px;
+          
+        }
 
 div.div-content-home span:last-child {
   animation-delay: 0.9s;
