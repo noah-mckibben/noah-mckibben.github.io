@@ -80,8 +80,8 @@ div.container {
   color: white;
 }
 
-@media only screen and (max-width: 601px) {
-div.div-content-home strong {
+@media only screen and (max-width: 801px) {
+div.div-content-home h1 {
   opacity: 0;
   animation-name: fade-in;
   animation-duration: 0.7s;
@@ -91,18 +91,21 @@ div.div-content-home strong {
   font-size: 65px;
   display: flex;
   justify-content: center;
-  font-style: normal;
-  margin-top: 20%;
+
 
 }
-@media only screen and (max-width: 600px) {
-  div.div-content-home strong {
+@media only screen and (max-width: 375px) {
+  div.div-content-home h1 {
     font-size: 40px;
+    margin-top: 25%;
+    display: flex;
+    justify-content: center;
   }
 
-div.div-content-home span {
-  font-size: 24px;
-
+div.div-content-home h2 {
+  font-size: 25px;
+  display: flex;
+ justify-content: center;
 }
 
 div.div-content-home span:last-child {
