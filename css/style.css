@@ -80,15 +80,29 @@ div.container {
   color: white;
 }
 
-div.div-content-home span {
-  margin: 3%;
+@media only screen and (max-width: 601px) {
+div.div-content-home strong {
   opacity: 0;
-  display: inline-block;
   animation-name: fade-in;
   animation-duration: 0.7s;
   animation-delay: 0.5s;
   animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   animation-fill-mode: forwards;
+  font-size: 65px;
+  display: flex;
+  justify-content: center;
+  font-style: normal;
+  margin-top: 20%;
+
+}
+@media only screen and (max-width: 600px) {
+  div.div-content-home strong {
+    font-size: 40px;
+  }
+
+div.div-content-home span {
+  font-size: 24px;
+
 }
 
 div.div-content-home span:last-child {
@@ -96,9 +110,6 @@ div.div-content-home span:last-child {
 }
 
 
-div.div-content-home {
-
-}
 
 div.div-content-about {
   margin: 3%;
@@ -108,12 +119,13 @@ div.div-content-about {
 div.div-content-projects {
   margin: 3%;
   color: black;
+
 }
 
 @keyframes fade-in {
   from {
     opacity: 0;
-    transform: translate(0.2em, 1.5em) rotate(8deg);
+
   }
   to {
     opacity: 1;
