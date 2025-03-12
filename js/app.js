@@ -7,7 +7,7 @@ const home = document.querySelector('a.home')
 const spanhome = document.querySelector('span.home')
 const spanabout = document.querySelector('span.about')
 const spanproject = document.querySelector('span.project')
-const h1= document.querySelector('h1.heading')
+const h1= document.querySelector('h1')
 
 darkToggle.addEventListener('click', () => {
     nav.classList.toggle('darkNav');
