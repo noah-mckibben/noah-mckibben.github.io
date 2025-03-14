@@ -1,3 +1,4 @@
+// This assigns a selector to a variable
 const nav = document.querySelector('nav');
 const darkToggle = document.querySelector('.darkToggle');
 const button = nav.querySelector('button');
@@ -7,8 +8,7 @@ const home = document.querySelector('a.home')
 const spanhome = document.querySelector('span.home')
 const spanabout = document.querySelector('span.about')
 const spanproject = document.querySelector('span.project')
-const h1= document.querySelector('h1')
-
+//This allows the toggle icon to apply a class to the selector variable
 darkToggle.addEventListener('click', () => {
     nav.classList.toggle('darkNav');
     button.classList.toggle('darkButton');
@@ -18,11 +18,10 @@ darkToggle.addEventListener('click', () => {
     spanhome.classList.toggle('darkText');
     spanabout.classList.toggle('darkText');
     spanproject.classList.toggle('darkText');
-    h1.classList.toggle('darkText');
-
 })
 
-
+//This is the function that is executed when clicking the moon icon
+//The function will change the configuration of the background color
 function background() {
     VANTA.WAVES({
         el: "html",
@@ -39,9 +38,6 @@ function background() {
     })
 }
 
-function disableScroll() {
-    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-}
 
 function hideAllContentDivs(){
         var contentDivs = document.getElementsByClassName('content');
