@@ -1,85 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Noah Mckibben</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="/favicon.ico" sizes="any">
-    <link rel="icon" href="/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Box icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <!--Page style sheet-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+  <!--Page tab title-->
+    <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
 </head>
-
 <body>
-<!--Navigation Bar-->
-<div class="container">
-<nav>
-    <img src="/img/me.png">
-    <a class="home" href="#" onclick="hideAllContentDivs();document.getElementsByClassName('div-content-home')[0].style.display='block';">Home</a>
-    <a class="about" href="#about" onclick="hideAllContentDivs();document.getElementsByClassName('div-content-about')[0].style.display='block';">About</a>
-    <a class="project" href="#project" onclick="hideAllContentDivs();document.getElementsByClassName('div-content-projects')[0].style.display='block';">Projects</a>
-    <ion-icon class="darkToggle" name="moon-outline" onclick="background()"></ion-icon>
-    <button>Contact</button>
-</nav>
+<!--========== HEADER ==========-->
+<header class="l-header" id="header">
+ <nav class="nav bd-container">
+     <a href="#" class="nav_logo">Noah</a>
+
+     <div class="nav_menu" id="nav-menu">
+         <ul class="nav_list">
+             <li class="nav_item">
+                 <a href="#home" class="nav_link active-link">
+                     <i class='bx bx-home nav_icon active-link'></i>Home
+                 </a>
+             </li>
+             <li class="nav_item">
+                 <a href="#profile" class="nav_link">
+                     <i class='bx bx-user nav_icon'></i>Profile
+                 </a>
+             </li>
+             <li class="nav_item">
+                 <a href="#education" class="nav_link">
+                     <i class='bx bx-book nav_icon'></i>Education
+                 </a>
+             </li>
+             <li class="nav_item">
+                 <a href="#skills" class="nav_link">
+                     <i class='bx bx-receipt nav_icon'></i>Skills
+                 </a>
+             </li>
+             <li class="nav_item">
+                 <a href="#experience" class="nav_link">
+                     <i class='bx bx-briefcase-alt nav_icon'></i>Experience
+                 </a>
+             </li>
+             <li class="nav_item">
+                 <a href="#certificates" class="nav_link">
+                     <i class='bx bx-award nav_icon'></i>Certificates
+                 </a>
+             </li>
+             <li class="nav_item">
+                 <a href="#references" class="nav_link">
+                     <i class='bx bx-link-external nav_icon'></i>References
+                 </a>
+             </li>
+             <li class="nav_item">
+                 <a href="#projects" class="nav_link">
+                     <i class='bx bx-hard-hat nav_icon'></i>Projects
+                 </a>
+             </li>
+         </ul>
+     </div>
+
+<div class="nav_toggle" id="nav-toggle">
+    <i class='bx bx-grid-alt'></i>
 </div>
+     </nav>
+ </header>
 
-<!--Home Page-->
-<div class="content div-content-home">
-    <span class="home">
-        <h1>Noah Mckibben</h1>
-    <h2>I'm a Developer</h2>
-        <h3>Creating beautiful, and functional web applications</h3>
-  </span>
-    <picture>
-        <source
-                srcset="/img/github.jpg"
-                media="(min-width: 600px)"
-        >
-        <img src="/img/github.jpg" style>
-        </picture>
+<main class="l-main bd-container">
+    <!-- All elements within this div, is generated in PDF -->
+    <div class="resume" id="area-cv">
+        <div class="resume_left">
+            <!--========== HOME ==========-->
+         <section class="home" id="home">
+            <div class="home_container section bd-grid">
+                <div class="home_data bd-grid">
+                        <img src="assets/img/me.jpg" alt="" class="home_img">
+                        <h1 class="home_title"><b>Noah</b> Mckibben</h1>
+                        <h3 class="home_profession">Information Systems</h3>
+
+                        <div>
+            <a download="" href="assets/pdf/ResumeCv.pdf" class="home_button-movil">Download</a>
+                        </div>
+                    </div>
+                <div class="home_address bd-grid">
+                    <span class="home_information">
+                    <i class='bx bx-map home_icon' ></i> Anderson - Indiana
+                    </span>
+                    <span class="home_information">
+                    <i class='bx bx-envelope home_icon' ></i> noah.mckibben@icloud.com
+                    </span>
+                    <span class="home_information">
+                    <i class='bx bx-phone home_icon' ></i> 765-425-7718
+                    </span>
+                </div>
+            </div>
+             <!-- Theme change button -->
+             <i class='bx bx-moon change-theme' title="Theme" id="theme-button"></i>
+             <!-- Button to generate and download the pdf. Available for desktop. -->
+             <i class='bx bx-download generate-pdf' title="Generate PDF" id="resume-button"></i>
+            </section>
+
+
+            <!--========== SOCIAL ==========-->
+            <section class="social section">
+<h2 class="section-title">SOCIAL</h2>
+
+                <div class="social_container bd-grid">
+                    <a href="https://linkedin.com/in/nmckibben/" target="_blank" class="social_link">
+                        <i class='bx bxl-linkedin-square social_icon'></i> @nmckibben
+                    </a>
+                    <a href="https://github.com/noah-mckibben" target="_blank" class="social_link">
+                        <i class='bx bxl-github social_icon'></i> @noah-mckibben
+                    </a>
+                </div>
+            </section>
+
+            <!--========== PROFILE ==========-->
+            <section class="profile section" id="profile">
+<h2 class="section-title">Profile</h2>
+                <p class="profile_description">Welcome to my portfolio! I have more than 5 years in the IT industry. </p>
+            </section>
+
+            <!--========== EDUCATION ==========-->
+            <section class="education section" id="education">
+<h2 class="section-title">Education</h2>
+                <div class="education_container bd-grid">
+                    <div class="education_content">
+                        <div class="education_time">
+                            <span class="education_rounder"></span>
+                            <span class="education_line"></span>
+                    </div>
+                        <div class="education_data bd-grid">
+                            <h3 class="education_title">BA in Business Information Systems</h3>
+                            <span class="education_studies">University of Arizona</span>
+                            <span class="education_year">2026-Current</span>
+                        </div>
+
+                    </div>
+                    <div class="education_content">
+                        <div class="education_time">
+                            <span class="education_rounder"></span>
+                            <span class="education_line"></span>
+                        </div>
+                        <div class="education_data bd-grid">
+                            <h3 class="education_title">AS in Computer Information Systems</h3>
+                            <span class="education_studies">Ashworth University</span>
+                            <span class="education_year">2025-2026 (Transferred after sem 1-3)</span>
+                        </div>
+
+                    </div>
+                    <div class="education_content">
+                        <div class="education_time">
+                            <span class="education_rounder"></span>
+                            <span class="education_line"></span>
+                        </div>
+                        <div class="education_data bd-grid">
+                            <h3 class="education_title">Network and Security Technician Program</h3>
+                            <span class="education_studies">Medcerts</span>
+                            <span class="education_year">2019-2020</span>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <!--========== SKILLS  ==========-->
+            <section class="skills section" id="skills">
+<h2 class="section-title">Skills</h2>
+                <div class="skills_content bd-grid">
+                    <ul class="skills_data">
+                        <li class="skills_name">
+                            <span class="bx bxl-python"></span>&nbsp;Python
+                        </li>
+                        <li class="skills_name">
+                            <span class="bx bxl-postgresql"></span>&nbsp;SQL
+                        </li>
+                        <li class="skills_name">
+                            <span class="bx bxl-javascript"></span>&nbsp;Javascript
+                        </li>
+                        <li class="skills_name">
+                            <span class="bx bxl-java"></span>&nbsp;Java
+                        </li>
+                        <li class="skills_name">
+                            <span class="bx bxl-microsoft"></span>&nbsp;Azure
+                        </li>
+                    </ul>
+                    <ul class="skills_data">
+                        <li class="skills_name">
+                            <span class="bx bxl-angular"></span>&nbsp;Angular
+                        </li>
+                        <li class="skills_name">
+                            <span class="bx bxl-mongodb"></span>&nbsp;MongoDB
+                        </li>
+                        <li class="skills_name">
+                            <span class="bx bxl-react"></span>&nbsp;React
+                        </li>
+                        <li class="skills_name">
+                            <span class="bx bxl-git"></span>&nbsp;Git
+                        </li>
+                        <li class="skills_name">
+                            <span class="bx bxl-tux"></span>&nbsp;Unix
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+
+        <div class="resume_right">
+            <!--========== EXPERIENCE ==========-->
+            <section class="experience section" id="experience">
+<h2 class="section-title">Experience</h2>
+
+                <div class="experience_container bd-grid">
+                  <div class="experience_content">
+                      <div class="experience_time">
+                          <span class="experience_rounder"></span>
+                          <span class="experience_line"></span>
+                      </div>
+                      <div class="experience_data bd-grid">
+                          <h3 class="experience_title">Dialer Operations Analyst II</h3>
+                          <span class="experience_company">2022-Current - Carrington Mortgage Services</span>
+                          <p class="experience_description">Experience description</p>
+                      </div>
+                  </div>
+                    <div class="experience_content">
+                        <div class="experience_time">
+                            <span class="experience_rounder"></span>
+                            <span class="experience_line"></span>
+                        </div>
+                        <div class="experience_data bd-grid">
+                            <h3 class="experience_title">Desktop Support Technician II</h3>
+                            <span class="experience_company">2020-2022 - Carrington Mortgage Services</span>
+                            <p class="experience_description"></p>
+                        </div>
+                    </div>
+                    <div class="experience_content">
+                        <div class="experience_time">
+                            <span class="experience_rounder"></span>
+                            <span class="experience_line"></span>
+                        </div>
+                        <div class="experience_data bd-grid">
+                            <h3 class="experience_title">Technical Support Advisor</h3>
+                            <span class="experience_company">2020-2020 - Concentrix</span>
+                            <p class="experience_description">Provide IB/OB technical support for Avalon products. Some tasks included password resets, processing returns, and or repairs. </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--========== CERTIFICATES ==========-->
+            <section class="certificate section" id="certificates">
+<h2 class="section-title">Certificates</h2>
+
+                <div class="certificate_container bd-grid">
+                    <div class="certificate_content">
+                        <h3 class="certificate_title">Genesys Cloud CX: Developer</h3>
+                        <p class="certificate_description">Certification exam designed to assess knowledge of the Genesys Cloud CX Platform. The exam mainly tests understanding of APIs and ability to test the environment's API endpoints.</p>
+                    </div>
+                </div>
+                <div class="certificate_container bd-grid">
+                    <div class="certificate_content">
+                        <h3 class="certificate_title">CompTIA Network+</h3>
+                        <p class="certificate_description">Certification exam designed to assess knowledge of networking in IT.</p>
+                    </div>
+                </div>
+                <div class="certificate_container bd-grid">
+                    <div class="certificate_content">
+                        <h3 class="certificate_title">CompTIA Security+</h3>
+                        <p class="certificate_description">Certification exam designed to assess knowledge of security in IT.</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <!--========== REFERENCES ==========-->
+            <section class="references section" id="references">
+                <h2 class="section-title">References</h2>
+<div class="references_container bd-grid">
+    <div class="references_content bd-grid">
+        <span class="references_subtitle">Current Supervisor</span>
+        <h3 class="references_title">Travis Hall</h3>
+        <ul class="references_contact">
+            <li>Phone: 614-288-3113</li>
+        </ul>
+    </div>
+
+    <div class="references_content bd-grid">
+        <span class="references_subtitle">Former Supervisor</span>
+        <h3 class="references_title">Zachary Houghton</h3>
+        <ul class="references_contact">
+            <li>Phone: 317-645-3105</li>
+        </ul>
+    </div>
 </div>
+            </section>
 
+            <!--========== PROJECTS ==========-->
+            <section class="projects section" id="projects">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects_container">
+                    <div>
+                    </div>
+                    <div>
+                    </div>
+                    <div>
+                    </div>
+                    <div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</main>
 
-<!--About Page-->
-<div class="content div-content-about" style="display:none">
-  <span class="about">
-    <strong>More Information About Us</strong><br/><br/>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </span>
-</div>
+<!--========== SCROLL TOP ==========-->
+<a href="#" class="scrolltop" id="scroll-top">
+    <i class='bx bx-up-arrow-alt scrolltop_icon' ></i>
+</a>
 
-<!--Projects Page-->
-<div class="content div-content-projects" style="display:none">
-  <span class="project">
-    <strong>Projects</strong><br/><br/>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </span>
-</div>
+<!--========== HTML2PDF ==========-->
+<script src="assets/js/html2pdf.bundle.min.js"></script>
 
-
-
-<!--Page scripts-->
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<script src="/js/app.js"></script>
-<script src="/js/three.min.js"></script>
-<script src="/js/vanta.waves.min.js"></script>
-<script>
-    VANTA.WAVES({
-        el: "html",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: true,
-        minHeight: 15,
-        minWidth: 200.00,
-        scale: 1.00,
-        scaleMobile: 1.00,
-        color: 0x5588,
-        waveHeight: 15,
-        zoom: 1
-    })
-</script>
+<!--Main JS-->
+<script src="assets/js/main.js"></script>
 
 </body>
-
 </html>
