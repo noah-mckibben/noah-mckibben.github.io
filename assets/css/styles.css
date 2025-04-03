@@ -191,7 +191,9 @@ gap: .25rem;
     border-width: 1px;
 }
 
-.projects_container > div:hover{
+.projects_container > div:hover,
+.projects_container > div:focus,
+.projects_container > div:active {
     box-shadow: 5px 10px 18px #888888;
     border-color: dimgrey;
 }
