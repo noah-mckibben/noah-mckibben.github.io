@@ -172,10 +172,25 @@ gap: .25rem;
 }
 
 .scale-cv .projects_container{
-    column-gap: 2.5rem;
+
+
+}
+.scale-cv .projects_container > div {
+    padding: 50px;
+    border-style: solid;
+    box-shadow: 5px 10px 18px #888888;
+    border-radius: 8px;
 }
 
 
+.projects_container > div {
+    border-style: solid;
+    padding: 100px;
+    margin-bottom: 1rem;
+    border-color: darkgrey;
+    box-shadow: 5px 10px 18px #888888;
+    border-radius: 8px;
+}
 body {
     margin: 0 0 var(--header-height) 0 ;
     padding: 0;
@@ -538,6 +553,13 @@ font-size: var(--smaller-font-size);
     .nav_list{
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem .5rem;
+    }
+    .projects_container > div{
+        border-style: solid;
+        padding: 100px;
+        margin-bottom: 1rem;
+        border-color: darkgrey;
+        box-shadow: 5px 10px 18px #888888;
     }
 }
 
