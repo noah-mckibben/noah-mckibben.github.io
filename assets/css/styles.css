@@ -195,6 +195,7 @@ gap: .25rem;
 .projects_container > div:hover{
     box-shadow: 5px 10px 18px #888888;
     border-color: dimgrey;
+    transition-delay: 2s;
 }
 
 body {
@@ -266,6 +267,18 @@ img {
     box-shadow: 0 -1px 4px rgba(0,0,0,.1);
     transition: .3s;
 }
+
+.skills_content {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.references_container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 
 /*========== NAV ==========*/
 .nav {
@@ -484,10 +497,6 @@ background-color: var(--text-color-light);
     grid-template-columns: repeat(2, 1fr);
 }
 
-.skills_content{
-    gap: 0;
-}
-
 .skills_name{
     display: flex;
     align-items: center;
@@ -525,8 +534,12 @@ font-size: var(--smaller-font-size);
 .references_title{
     font-size: var(--h3-font-size);
 }
-/*========== PROJECTS ==========*/
 
+/*========== PROJECTS ==========*/
+.projects_container > div:hover{
+    transition-delay: 0.3s;
+    transition-duration: 0.3s;
+}
 
 /* Scroll top */
 .scrolltop {
@@ -574,8 +587,8 @@ font-size: var(--smaller-font-size);
     }
     .projects_container > div:hover{
         box-shadow: 5px 10px 18px #888888;
-
     }
+
 
 }
 
@@ -630,7 +643,12 @@ font-size: var(--smaller-font-size);
 
     .references_container {
         grid-template-columns: repeat(2, 1fr);
+        display: grid;
+        margin-left: 17%;
+    }
 
+    .skills_content {
+        display: grid;
     }
 
 }
