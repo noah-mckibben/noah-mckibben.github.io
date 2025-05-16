@@ -94,6 +94,7 @@ body.scale-cv{
 .scale-cv .change-theme,
 .scale-cv .generate-pdf{
     display: none;
+
 }
 
 .scale-cv .bd-container{
@@ -176,9 +177,7 @@ gap: .25rem;
 
 }
 .scale-cv .projects_container > div {
-    padding: 50px;
-    border-style: solid;
-    border-radius: 8px;
+    font-size: 0.5rem;
 }
 
 
