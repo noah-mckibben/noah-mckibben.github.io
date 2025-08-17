@@ -123,8 +123,8 @@ body.scale-cv{
 
 }
 
-.home_address{
-    gap:0.8rem;
+.scale-cv .home_address{
+    gap: 0.8rem;
 }
 
 .scale-cv .home_data{
