@@ -490,6 +490,10 @@ background-color: var(--text-color-light);
 .education_year{
     font-size: var(--smaller-font-size);
 }
+
+.education_container{
+    margin-top: 0.3rem;
+}
 /*========== SKILLS AND LANGUAGES ==========*/
 .skills_content {
     grid-template-columns: repeat(2, 1fr);
