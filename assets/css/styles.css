@@ -180,6 +180,10 @@ gap: .25rem;
     font-size: 1rem;
 }
 
+.scale-cv ul {
+    margin-left: 1rem;
+}
+
 .scale-cv .skills_name{
     margin-bottom: var(--mb-1);
 }
