@@ -144,6 +144,10 @@ gap: .25rem;
     gap: 1rem;
 }
 
+.scale-cv .education_container{
+    margin-top: 0.3rem
+}
+
 .scale-cv .education_time,
 .scale-cv .experience_time{
     padding-right: .5rem;
