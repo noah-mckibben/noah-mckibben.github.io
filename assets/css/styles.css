@@ -491,8 +491,8 @@ background-color: var(--text-color-light);
     font-size: var(--smaller-font-size);
 }
 
-.education_container{
-    margin-top: 0.3rem;
+.education{
+    margin-top: -1.5rem;
 }
 /*========== SKILLS AND LANGUAGES ==========*/
 .skills_content {
