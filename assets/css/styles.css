@@ -102,7 +102,7 @@ body.scale-cv{
 }
 
 .scale-cv .section{
-    padding: 1.5rem 0 .80rem;
+    padding: 0.8rem 0 .80rem;
 }
 
 .scale-cv .section-title{
@@ -159,7 +159,7 @@ gap: .25rem;
 .scale-cv .education_line,
 .scale-cv .experience_line{
     width: 1px;
-    height: 110%;
+    height: 95%;
     transform: translate(5px, 0);
 }
 
