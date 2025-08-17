@@ -144,8 +144,8 @@ gap: .25rem;
     gap: 1rem;
 }
 
-.scale-cv .education_container{
-    margin-top: 0.3rem
+.scale-cv .education{
+    margin-top: -1.5rem;
 }
 
 .scale-cv .education_time,
