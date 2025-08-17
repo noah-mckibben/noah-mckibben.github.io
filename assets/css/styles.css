@@ -123,6 +123,10 @@ body.scale-cv{
 
 }
 
+.home_address{
+    gap:0.8rem;
+}
+
 .scale-cv .home_data{
 gap: .25rem;
 }
@@ -382,7 +386,7 @@ img {
 }
 
 .home_address{
-    gap: 1rem;
+    gap: 0.8rem;
 }
 
 .home_information{
