@@ -109,6 +109,10 @@ body.scale-cv{
     margin-bottom: .5rem;
 }
 
+.scale-cv .section-title > p{
+    font-size: 0.5rem;
+}
+
 .scale-cv .home_img{
     width: 90px;
     height: 90px;
