@@ -16,6 +16,39 @@
     <script>
         document.addEventListener("click", x=>0)
     </script>
+    <script>
+        function handleResponsiveLayout() {
+            const sidebar = document.querySelector('.sidebar');
+            const skillsSection = document.querySelector('.skills-section');
+            const educationSection = document.querySelector('.education-section');
+            
+            if (window.innerWidth >= 768) {
+                // Desktop: Move Skills and Education to sidebar
+                if (skillsSection && !sidebar.contains(skillsSection)) {
+                    sidebar.appendChild(skillsSection);
+                }
+                if (educationSection && !sidebar.contains(educationSection)) {
+                    sidebar.appendChild(educationSection);
+                }
+            } else {
+                // Mobile: Keep Skills and Education in main content in correct order
+                const mainContent = document.querySelector('.main-content');
+                const experienceSection = document.querySelector('.experience-section');
+                const projectsSection = document.querySelector('.projects-section');
+                
+                if (skillsSection && !mainContent.contains(skillsSection)) {
+                    mainContent.insertBefore(skillsSection, projectsSection);
+                }
+                if (educationSection && !mainContent.contains(educationSection)) {
+                    mainContent.insertBefore(educationSection, projectsSection);
+                }
+            }
+        }
+        
+        // Run on load and resize
+        window.addEventListener('load', handleResponsiveLayout);
+        window.addEventListener('resize', handleResponsiveLayout);
+    </script>
 </head>
 <body>
 <!--========== HEADER ==========-->
