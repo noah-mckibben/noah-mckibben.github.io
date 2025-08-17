@@ -568,7 +568,7 @@ font-size: var(--smaller-font-size);
     }
     .projects_container > div{
         padding: 100px;
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
 
     }
     .projects_container > div:hover{
