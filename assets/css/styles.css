@@ -172,6 +172,10 @@ gap: .25rem;
     margin-bottom: var(--mb-1);
 }
 
+.scale-cv .skills_content{
+    margin-top: 0.5rem;
+}
+
 .scale-cv .projects_container{
 
 
