@@ -176,6 +176,10 @@ gap: .25rem;
 gap: .25rem;
 }
 
+.scale-cv .experience_description{
+    font-size: 1rem;
+}
+
 .scale-cv .skills_name{
     margin-bottom: var(--mb-1);
 }
