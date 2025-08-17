@@ -119,7 +119,7 @@ body.scale-cv{
 }
 
 .scale-cv .home_container{
-    gap: 1.5rem;
+    gap: 0.8rem;
 
 }
 
@@ -348,7 +348,7 @@ img {
 }
 
 .home_container {
-    gap: 3rem;
+    gap: 0.8rem;
 }
 
 .home_data {
@@ -620,7 +620,7 @@ font-size: var(--smaller-font-size);
     }
 
     .home_container {
-        gap: 1.5rem;
+        gap: 0.8rem;
     }
 
     .home_button-movil {
