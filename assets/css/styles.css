@@ -514,7 +514,7 @@ background-color: var(--text-color-light);
 
 /*========== SKILLS AND LANGUAGES ==========*/
 .skills_content {
-    grid-template-columns: repeat(2, 1fr);
+    
 }
 
 .skills_name{
