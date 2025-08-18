@@ -512,9 +512,6 @@ background-color: var(--text-color-light);
     font-size: var(--smaller-font-size);
 }
 
-.education{
-    margin-top: -1.5rem;
-}
 /*========== SKILLS AND LANGUAGES ==========*/
 .skills_content {
     grid-template-columns: repeat(2, 1fr);
