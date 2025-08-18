@@ -152,8 +152,8 @@ gap: .25rem;
     gap: 1rem;
 }
 
-.scale-cv .education{
-    
+.scale-cv .education_studies{
+    font-size: 0.7rem;
 }
 
 .scale-cv .education_time,
